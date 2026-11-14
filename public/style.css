@@ -30,7 +30,7 @@ p { line-height: 1.65; }
 .site-header { border-bottom: 1px solid var(--line); background: #151311; }
 .header-inner { display: flex; min-height: 77px; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; font-family: Georgia, serif; font-size: 1.58rem; letter-spacing: -.05em; width: fit-content; }
-.brand-mark { display: grid; place-items: center; border: 1px solid #a3804a; width: 32px; height: 32px; border-radius: 50%; font-size: 1.22rem; color: var(--gold); line-height: 1; }
+.brand-mark { display: block; width: 40px; height: 40px; object-fit: contain; }
 nav { display: flex; gap: clamp(18px, 3vw, 45px); }
 nav a, .footer > a:last-child { font-size: .91rem; color: var(--muted); }
 nav a:hover, .footer a:hover { color: var(--gold-light); }
