@@ -36,13 +36,16 @@ jobs:
             echo "ready=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Deploy to Cloudflare Pages
+      # foodfi.io обслуживает Cloudflare Worker со статическими файлами (не проект Pages).
+      # Имя Worker'а берётся из переменной CF_PAGES_PROJECT (историческое имя).
+      - name: Deploy to Cloudflare Worker (static assets)
         if: steps.secrets.outputs.ready == 'true'
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy public --project-name=${{ vars.CF_PAGES_PROJECT }} --branch=main --commit-dirty=true
+          wranglerVersion: "4.153.0"
+          command: deploy --name=${{ vars.CF_PAGES_PROJECT }} --assets=public --compatibility-date=2026-11-01
 
       - name: Smoke check
         if: steps.secrets.outputs.ready == 'true' && vars.SITE_URL != ''
