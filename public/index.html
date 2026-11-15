@@ -3,90 +3,96 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FoodFi — Платёжная экосистема для ресторанов</title>
-<meta name="description" content="FoodFi объединяет гостей и рестораны. Узнайте о приложении, карте FoodFi Gold, платежах FDF и дорожной карте проекта на 2026–2028 годы.">
+<title data-i18n="meta.title">FoodFi — Платёжная экосистема для ресторанов</title>
+<meta name="description" data-i18n-content="meta.desc" content="FoodFi объединяет гостей и рестораны. Узнайте о приложении, карте FoodFi Gold, платежах FDFi и дорожной карте проекта на 2026–2028 годы.">
 <meta name="theme-color" content="#11100f">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="stylesheet" href="style.css">
+<script defer src="i18n.js"></script>
 <script defer src="demo.js"></script>
 </head>
 <body>
-<a class="skip" href="#main">К содержанию</a>
+<a class="skip" href="#main" data-i18n="skip">К содержанию</a>
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="#top" aria-label="FoodFi — на главную"><img class="brand-mark" src="foodfi-logo.webp" alt="" width="40" height="40">FoodFi</a>
-    <nav aria-label="Основная навигация"><a href="#ecosystem">Экосистема</a><a href="#roadmap">Дорожная карта</a><a href="#demo">Демо</a></nav>
-    <a class="button button-small button-outline" href="https://t.me/Chebutapbot">Telegram <span aria-hidden="true">↗</span></a>
+    <a class="brand" href="#top" data-i18n-aria-label="brand.home" aria-label="FoodFi — на главную"><img class="brand-mark" src="foodfi-logo.webp" alt="" width="40" height="40">FoodFi</a>
+    <nav data-i18n-aria-label="nav.label" aria-label="Основная навигация"><a href="#ecosystem" data-i18n="nav.ecosystem">Экосистема</a><a href="#roadmap" data-i18n="nav.roadmap">Дорожная карта</a><a href="#demo" data-i18n="nav.demo">Демо</a></nav>
+    <div class="header-tools">
+      <div class="lang" role="group" data-i18n-aria-label="lang.label" aria-label="Язык сайта">
+        <button type="button" data-lang="ru" aria-pressed="true">RU</button><button type="button" data-lang="en" aria-pressed="false">EN</button><button type="button" data-lang="es" aria-pressed="false">ES</button><button type="button" data-lang="zh" aria-pressed="false">中文</button>
+      </div>
+      <a class="button button-small button-outline" href="https://t.me/Chebutapbot">Telegram <span aria-hidden="true">↗</span></a>
+    </div>
   </div>
 </header>
 <main id="main">
   <section class="hero" id="top" aria-labelledby="hero-title">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="gold-dot"></span> FOODFI · FDF</p>
-        <h1 id="hero-title">Платёжная сеть<br class="desktop-break"> для мира <em>гастрономии</em></h1>
-        <p class="lede">FoodFi объединяет гостей и рестораны в одной экосистеме: приложение с кошельком FDF, карта Gold и платежи с прямыми чаевыми.</p>
+        <p class="eyebrow"><span class="gold-dot"></span> FOODFI · FDFi</p>
+        <h1 id="hero-title" data-i18n="hero.title">Платёжная сеть<br class="desktop-break"> для мира <em>гастрономии</em></h1>
+        <p class="lede" data-i18n="hero.lede">FoodFi объединяет гостей и рестораны в одной экосистеме: приложение с кошельком FDFi, карта Gold и платежи с прямыми чаевыми.</p>
         <div class="actions">
-          <a class="button button-gold" href="https://t.me/Chebutapbot">Открыть Telegram-бота <span aria-hidden="true">↗</span></a>
-          <a class="button button-outline" href="#roadmap">Дорожная карта <span aria-hidden="true">↓</span></a>
+          <a class="button button-gold" href="https://t.me/Chebutapbot"><span data-i18n="hero.bot">Открыть Telegram-бота</span> <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="#roadmap"><span data-i18n="nav.roadmap">Дорожная карта</span> <span aria-hidden="true">↓</span></a>
         </div>
       </div>
       <figure class="token">
-        <div class="orbit"><img src="foodfi-token.png" width="207" height="208" alt="Монета FoodFi с эмблемой проекта"></div>
-        <figcaption><span>FDF</span><span>ТОКЕН ЭКОСИСТЕМЫ FOODFI</span></figcaption>
+        <div class="orbit"><img src="foodfi-token.webp" width="512" height="512" data-i18n-alt="hero.coinAlt" alt="Монета FoodFi с эмблемой проекта"></div>
+        <figcaption><span>FDFi</span><span data-i18n="hero.caption">ТОКЕН ЭКОСИСТЕМЫ FOODFI</span></figcaption>
       </figure>
     </div>
   </section>
 
-  <div class="wrap"><dl class="metrics" aria-label="Целевые показатели дорожной карты">
-    <div><dt>Период дорожной карты</dt><dd>2026–2028</dd></div>
-    <div><dt>Целевой кешбэк Gold</dt><dd>5<span>%</span></dd></div>
-    <div><dt>Целевая комиссия POS</dt><dd>0,2<span>%</span></dd></div>
-    <div><dt>Цель по подключению ресторанов</dt><dd>50 000<span>+</span></dd></div>
+  <div class="wrap"><dl class="metrics" data-i18n-aria-label="metrics.label" aria-label="Целевые показатели дорожной карты">
+    <div><dt data-i18n="metrics.period">Период дорожной карты</dt><dd>2026–2028</dd></div>
+    <div><dt data-i18n="metrics.cashback">Целевой кешбэк Gold</dt><dd>5<span>%</span></dd></div>
+    <div><dt data-i18n="metrics.pos">Целевая комиссия POS</dt><dd data-i18n="metrics.posValue">0,2<span>%</span></dd></div>
+    <div><dt data-i18n="metrics.restaurants">Цель по подключению ресторанов</dt><dd data-i18n="metrics.restaurantsValue">50 000<span>+</span></dd></div>
   </dl></div>
 
   <section class="wrap section" id="ecosystem" aria-labelledby="ecosystem-title">
-    <p class="eyebrow">ЭКОСИСТЕМА</p>
-    <h2 id="ecosystem-title">От заказа до чаевых</h2>
-    <p class="section-intro">FoodFi проектирует единый сценарий оплаты для гостей, ресторанов и персонала.</p>
+    <p class="eyebrow" data-i18n="eco.eyebrow">ЭКОСИСТЕМА</p>
+    <h2 id="ecosystem-title" data-i18n="eco.title">От заказа до чаевых</h2>
+    <p class="section-intro" data-i18n="eco.intro">FoodFi проектирует единый сценарий оплаты для гостей, ресторанов и персонала.</p>
     <div class="feature-grid">
-      <article class="feature"><span class="feature-icon" aria-hidden="true">◇</span><h3>Гостям</h3><p>Приложение для iOS и Android, кошелёк FDF, карта FoodFi Gold и вознаграждения Dine-to-Earn за чеки и отзывы.</p></article>
-      <article class="feature"><span class="feature-icon" aria-hidden="true">▤</span><h3>Ресторанам</h3><p>Бесконтактная оплата, электронные чеки и облачная синхронизация между кассой, приложением гостя и кухней.</p></article>
-      <article class="feature"><span class="feature-icon" aria-hidden="true">✧</span><h3>Персоналу</h3><p>Гость выбирает размер чаевых в электронном чеке. По плану FoodFi, чаевые поступают в FDF прямо в кошелёк официанта.</p></article>
+      <article class="feature"><span class="feature-icon" aria-hidden="true">◇</span><h3 data-i18n="eco.guests">Гостям</h3><p data-i18n="eco.guestsText">Приложение для iOS и Android, кошелёк FDFi, карта FoodFi Gold и вознаграждения Dine-to-Earn за чеки и отзывы.</p></article>
+      <article class="feature"><span class="feature-icon" aria-hidden="true">▤</span><h3 data-i18n="eco.restaurants">Ресторанам</h3><p data-i18n="eco.restaurantsText">Бесконтактная оплата, электронные чеки и облачная синхронизация между кассой, приложением гостя и кухней.</p></article>
+      <article class="feature"><span class="feature-icon" aria-hidden="true">✧</span><h3 data-i18n="eco.staff">Персоналу</h3><p data-i18n="eco.staffText">Гость выбирает размер чаевых в электронном чеке. По плану FoodFi, чаевые поступают в FDFi прямо в кошелёк официанта.</p></article>
     </div>
   </section>
 
   <section class="roadmap section" id="roadmap" aria-labelledby="roadmap-title">
     <div class="wrap">
-      <p class="eyebrow">НОЯБРЬ 2026 — 2028+</p>
-      <h2 id="roadmap-title">Дорожная карта</h2>
-      <p class="section-intro">Шесть этапов развития FoodFi. Даты, показатели и интеграции отражают планы проекта.</p>
+      <p class="eyebrow" data-i18n="rm.eyebrow">НОЯБРЬ 2026 — 2028+</p>
+      <h2 id="roadmap-title" data-i18n="nav.roadmap">Дорожная карта</h2>
+      <p class="section-intro" data-i18n="rm.intro">Шесть этапов развития FoodFi. Даты, показатели и интеграции отражают планы проекта.</p>
       <div class="timeline">
-        <details open><summary><span class="period">НОЯ–ДЕК 2026</span><span class="stage">Мобильное приложение и FoodFi Gold</span><span class="toggle" aria-hidden="true"></span></summary><div class="milestone"><p>Приложение для iOS и Android со встроенным кошельком, биометрическим входом и push-уведомлениями о расходах.</p><ul><li>Airdrop для первых участников сообщества. Планируемый объём — 5 млн FDF.</li><li>Виртуальная и физическая карта Gold с целевым кешбэком 5% в ресторанах.</li><li>Dine-to-Earn за регистрацию чеков и отзывы.</li></ul></div></details>
-        <details><summary><span class="period">I КВ. 2027</span><span class="stage">Пресейл, аудит и токеномика</span><span class="toggle" aria-hidden="true"></span></summary><div class="milestone"><p>Планируется публичный раунд FDF с лимитом $2,4 млн, аудит смарт-контрактов и выпуск токенов по графику вестинга.</p><ul><li>Планируемый аудитор — CertiK.</li><li>Двухфакторная аутентификация и ключи доступа для защиты операций.</li></ul></div></details>
-        <details><summary><span class="period">II КВ. 2027</span><span class="stage">Кошелёк, стейкинг и реферальная программа</span><span class="toggle" aria-hidden="true"></span></summary><div class="milestone"><p>Личный кабинет с аналитикой и некастодиальным кошельком FDF. Целевое время проведения платежа — менее 450 мс.</p><ul><li>Гибкий стейкинг и пулы на 90 и 360 дней.</li><li>Планируемая реферальная программа с тремя уровнями — 7%, 3% и 1% от наград сети.</li><li>Интерфейс на русском, английском, испанском и китайском языках.</li></ul></div></details>
-        <details><summary><span class="period">III–IV КВ. 2027</span><span class="stage">Ресторанный POS и прямые чаевые</span><span class="toggle" aria-hidden="true"></span></summary><div class="milestone"><p>Бесконтактный терминал FoodFi с целевым временем подтверждения 320 мс.</p><ul><li>Электронный чек с выбором чаевых в FDF.</li><li>Облачная синхронизация кассы, приложения гостя и кухни.</li></ul></div></details>
-        <details><summary><span class="period">I–II КВ. 2028</span><span class="stage">Биржевые интеграции и своп FDF/TON</span><span class="toggle" aria-hidden="true"></span></summary><div class="milestone"><p>Планируются интеграции с API Binance, Bybit, OKX и Uniswap, а также сценарии обмена FDF на TON и USDT.</p><ul><li>Биржевой виджет с интервалами 1 и 5 секунд.</li><li>Стакан заявок с отображением глубины рынка.</li></ul></div></details>
-        <details><summary><span class="period">2028+</span><span class="stage">Международное расширение</span><span class="toggle" aria-hidden="true"></span></summary><div class="milestone"><p>Цель — 50 000 ресторанов в 35 странах и присутствие более чем в 30 мегаполисах.</p><ul><li>Гастрономические фестивали и кампании с шеф-поварами и авторами.</li><li>Цели этапа включают сотрудничество с гидом Michelin и подключение ресторанных сетей через FoodFi Enterprise.</li></ul></div></details>
+        <details open><summary><span class="period" data-i18n="rm.p1">НОЯ–ДЕК 2026</span><span class="stage" data-i18n="rm.s1">Мобильное приложение и FoodFi Gold</span><span class="toggle" aria-hidden="true"></span></summary><div class="milestone"><p data-i18n="rm.t1">Приложение для iOS и Android со встроенным кошельком, биометрическим входом и push-уведомлениями о расходах.</p><ul><li data-i18n="rm.l1a">Airdrop для первых участников сообщества. Планируемый объём — 5 млн FDFi.</li><li data-i18n="rm.l1b">Виртуальная и физическая карта Gold с целевым кешбэком 5% в ресторанах.</li><li data-i18n="rm.l1c">Dine-to-Earn за регистрацию чеков и отзывы.</li></ul></div></details>
+        <details><summary><span class="period" data-i18n="rm.p2">I КВ. 2027</span><span class="stage" data-i18n="rm.s2">Пресейл, аудит и токеномика</span><span class="toggle" aria-hidden="true"></span></summary><div class="milestone"><p data-i18n="rm.t2">Планируется публичный раунд FDFi с лимитом $2,4 млн, аудит смарт-контрактов и выпуск токенов по графику вестинга.</p><ul><li data-i18n="rm.l2a">Планируемый аудитор — CertiK.</li><li data-i18n="rm.l2b">Двухфакторная аутентификация и ключи доступа для защиты операций.</li></ul></div></details>
+        <details><summary><span class="period" data-i18n="rm.p3">II КВ. 2027</span><span class="stage" data-i18n="rm.s3">Кошелёк, стейкинг и реферальная программа</span><span class="toggle" aria-hidden="true"></span></summary><div class="milestone"><p data-i18n="rm.t3">Личный кабинет с аналитикой и некастодиальным кошельком FDFi. Целевое время проведения платежа — менее 450 мс.</p><ul><li data-i18n="rm.l3a">Гибкий стейкинг и пулы на 90 и 360 дней.</li><li data-i18n="rm.l3b">Планируемая реферальная программа с тремя уровнями — 7%, 3% и 1% от наград сети.</li><li data-i18n="rm.l3c">Интерфейс на русском, английском, испанском и китайском языках.</li></ul></div></details>
+        <details><summary><span class="period" data-i18n="rm.p4">III–IV КВ. 2027</span><span class="stage" data-i18n="rm.s4">Ресторанный POS и прямые чаевые</span><span class="toggle" aria-hidden="true"></span></summary><div class="milestone"><p data-i18n="rm.t4">Бесконтактный терминал FoodFi с целевым временем подтверждения 320 мс.</p><ul><li data-i18n="rm.l4a">Электронный чек с выбором чаевых в FDFi.</li><li data-i18n="rm.l4b">Облачная синхронизация кассы, приложения гостя и кухни.</li></ul></div></details>
+        <details><summary><span class="period" data-i18n="rm.p5">I–II КВ. 2028</span><span class="stage" data-i18n="rm.s5">Биржевые интеграции и своп FDFi/TON</span><span class="toggle" aria-hidden="true"></span></summary><div class="milestone"><p data-i18n="rm.t5">Планируются интеграции с API Binance, Bybit, OKX и Uniswap, а также сценарии обмена FDFi на TON и USDT.</p><ul><li data-i18n="rm.l5a">Биржевой виджет с интервалами 1 и 5 секунд.</li><li data-i18n="rm.l5b">Стакан заявок с отображением глубины рынка.</li></ul></div></details>
+        <details><summary><span class="period">2028+</span><span class="stage" data-i18n="rm.s6">Международное расширение</span><span class="toggle" aria-hidden="true"></span></summary><div class="milestone"><p data-i18n="rm.t6">Цель — 50 000 ресторанов в 35 странах и присутствие более чем в 30 мегаполисах.</p><ul><li data-i18n="rm.l6a">Гастрономические фестивали и кампании с шеф-поварами и авторами.</li><li data-i18n="rm.l6b">Цели этапа включают сотрудничество с гидом Michelin и подключение ресторанных сетей через FoodFi Enterprise.</li></ul></div></details>
       </div>
     </div>
   </section>
 
   <section class="wrap section demo-grid" id="demo" aria-labelledby="demo-title">
-    <div><p class="eyebrow">ДЕМОНСТРАЦИЯ</p><h2 id="demo-title">Как работают<br>прямые чаевые</h2><p class="section-intro">Выберите размер чаевых и посмотрите, как FoodFi покажет их в электронном чеке. Демо использует условные суммы в FDF.</p></div>
+    <div><p class="eyebrow" data-i18n="demo.eyebrow">ДЕМОНСТРАЦИЯ</p><h2 id="demo-title" data-i18n="demo.title">Как работают<br>прямые чаевые</h2><p class="section-intro" data-i18n="demo.intro">Выберите размер чаевых и посмотрите, как FoodFi покажет их в электронном чеке. Демо использует условные суммы в FDFi.</p></div>
     <div class="receipt">
-      <h3>Демо-чек</h3>
-      <dl class="receipt-lines"><div><dt>Счёт ресторана</dt><dd>100 FDF</dd></div><div><dt>Чаевые официанту</dt><dd><output id="tip-value">10</output> FDF</dd></div></dl>
-      <fieldset class="tip-options"><legend>Размер чаевых</legend><label><input type="radio" name="tip" value="0"><span>0%</span></label><label><input type="radio" name="tip" value="10" checked><span>10%</span></label><label><input type="radio" name="tip" value="15"><span>15%</span></label><label><input type="radio" name="tip" value="20"><span>20%</span></label></fieldset>
-      <div class="receipt-total"><span>Итого</span><strong><output id="receipt-total" aria-live="polite">110</output> FDF</strong></div>
+      <h3 data-i18n="demo.receipt">Демо-чек</h3>
+      <dl class="receipt-lines"><div><dt data-i18n="demo.bill">Счёт ресторана</dt><dd>100 FDFi</dd></div><div><dt data-i18n="demo.tip">Чаевые официанту</dt><dd><output id="tip-value">10</output> FDFi</dd></div></dl>
+      <fieldset class="tip-options"><legend data-i18n="demo.tipSize">Размер чаевых</legend><label><input type="radio" name="tip" value="0"><span>0%</span></label><label><input type="radio" name="tip" value="10" checked><span>10%</span></label><label><input type="radio" name="tip" value="15"><span>15%</span></label><label><input type="radio" name="tip" value="20"><span>20%</span></label></fieldset>
+      <div class="receipt-total"><span data-i18n="demo.total">Итого</span><strong><output id="receipt-total" aria-live="polite">110</output> FDFi</strong></div>
     </div>
   </section>
 
   <section class="wrap" aria-labelledby="telegram-title">
-    <div class="telegram"><div><h2 id="telegram-title">FoodFi в Telegram</h2><p>Откройте бота проекта в Telegram.</p></div><a class="button button-gold" href="https://t.me/Chebutapbot">Открыть @Chebutapbot <span aria-hidden="true">↗</span></a></div>
+    <div class="telegram"><div><h2 id="telegram-title" data-i18n="tg.title">FoodFi в Telegram</h2><p data-i18n="tg.text">Откройте бота проекта в Telegram.</p></div><a class="button button-gold" href="https://t.me/Chebutapbot"><span data-i18n="tg.open">Открыть</span> @Chebutapbot <span aria-hidden="true">↗</span></a></div>
   </section>
 </main>
-<footer class="wrap footer"><a class="brand" href="#top"><img class="brand-mark" src="foodfi-logo.webp" alt="" width="40" height="40">FoodFi</a><span>FoodFi · Дорожная карта 2026–2028</span><a href="https://t.me/Chebutapbot">Telegram ↗</a></footer>
+<footer class="wrap footer"><a class="brand" href="#top"><img class="brand-mark" src="foodfi-logo.webp" alt="" width="40" height="40">FoodFi</a><span data-i18n="footer.text">FoodFi · Дорожная карта 2026–2028</span><a href="https://t.me/Chebutapbot">Telegram ↗</a></footer>
 </body>
 </html>

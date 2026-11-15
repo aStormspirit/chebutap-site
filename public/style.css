@@ -34,6 +34,13 @@ p { line-height: 1.65; }
 nav { display: flex; gap: clamp(18px, 3vw, 45px); }
 nav a, .footer > a:last-child { font-size: .91rem; color: var(--muted); }
 nav a:hover, .footer a:hover { color: var(--gold-light); }
+.header-tools { display: flex; align-items: center; gap: 12px; }
+.lang { display: flex; border: 1px solid #584634; border-radius: 6px; overflow: hidden; }
+.lang button { appearance: none; border: 0; background: transparent; color: var(--muted); font: 700 .74rem/1 "IBM Plex Mono", Consolas, monospace; letter-spacing: .04em; padding: 0 9px; min-height: 38px; cursor: pointer; }
+.lang button + button { border-left: 1px solid #3f3226; }
+.lang button:hover { color: var(--gold-light); }
+.lang button[aria-pressed="true"] { background: var(--gold); color: #201608; }
+.lang button:focus-visible { outline: 2px solid var(--gold-light); outline-offset: -2px; }
 .button { display: inline-flex; justify-content: center; align-items: center; gap: 13px; min-height: 54px; padding: 12px 20px; border: 1px solid transparent; border-radius: 6px; font-size: .93rem; font-weight: 700; line-height: 1.3; transition: background-color .2s, color .2s, border-color .2s; }
 .button-small { min-height: 40px; padding: 8px 14px; font-size: .83rem; }
 .button-gold { color: #201608; background: var(--gold); }
@@ -111,6 +118,8 @@ details[open] .toggle::before { content: "−"; }
 @media (max-width: 640px) {
   .wrap { width: calc(100% - 32px); }
   .header-inner { min-height: 0; padding-block: 14px 12px; flex-wrap: wrap; gap: 13px; }
+  .header-tools { gap: 8px; }
+  .lang button { padding: 0 7px; min-height: 36px; }
   nav { order: 1; width: 100%; justify-content: space-between; gap: 7px; }
   nav a { padding-block: 4px; font-size: .85rem; }
   .hero-grid { grid-template-columns: 1fr; gap: 42px; padding-block: 49px 32px; }
