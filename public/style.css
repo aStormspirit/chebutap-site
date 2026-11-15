@@ -86,6 +86,7 @@ figcaption span:first-child { color: var(--gold-light); border: 1px solid #644c3
 .tk-name { font-weight: 650; }
 .tk-pct { color: var(--gold); font: 700 1rem/1 "IBM Plex Mono", Consolas, monospace; }
 .tk-amount { grid-column: 2 / -1; color: var(--muted); font-size: .86rem; }
+.tk-terms { grid-column: 2 / -1; color: var(--gold-light); font-size: .8rem; opacity: .85; }
 .roadmap { background: #171411; border-block: 1px solid var(--line); }
 .timeline { margin-top: 29px; border-top: 1px solid var(--line); }
 details { border-bottom: 1px solid var(--line); }
