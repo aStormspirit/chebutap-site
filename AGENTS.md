@@ -4,5 +4,5 @@
 
 - Публикация: push в `main` → `.github/workflows/deploy.yml` → Cloudflare Worker `foodfi-site` со статическими файлами (`wrangler deploy --assets=public`).
 - Проверка перед коммитом: открыть `public/index.html` в браузере (или `npx serve public`), убедиться, что нет ошибок в консоли и вёрстка не съехала на ширине телефона (375 px).
-- Основной язык — русский (в HTML); при изменении текста обнови переводы в `public/i18n.js`. Ссылки на Telegram-бота игры — `https://t.me/Chebutapbot`.
+- Основной язык — русский (в HTML); при изменении текста обнови переводы в `public/i18n.js`. Кнопки Airdrop FDFi и ссылки Telegram ведут на канал `https://t.me/Food_Fi`.
 - Секреты не коммитить. Force-push запрещён.
